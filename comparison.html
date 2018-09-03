@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="index.html">Latitude</a>
+            </li>
+            <li>
+                <a href="#">Plots</a>
+                <select id="plot-select" onchange="location = this.value;">
+                    <option value="#">Select</option>
+                    <option value="fig1.html">Fig1</option>
+                    <option value="fig2.html">Fig2</option>
+                    <option value="fig3.html">Fig3</option>
+                    <option value="fig4.html">Fig4</option>
+                  </select>
+            </li>
+            <li>
+              <a href="comparison.html">Comparison</a>
+            </li>
+            <li>
+              <a href="data.html">Data</a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </nav>
+                <div class="container">
+                        <div>
+                                <br>
+                                <h3>Comparison: Latitude vs X</h3>
+                                <br>
+                                <hr>
+                                <p>All four graphs represented side by side via bootstrap.
+                                </p>
+                                <br>
+                            </div>  
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="thumbnail">
+                              <div class="caption">
+                                <h3>vs Max Temperature</h3>
+                              </div>
+                              <img src="images/Fig1.png" alt="...">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                                <div class="thumbnail">
+                                  <div class="caption">
+                                    <h3>vs Humidity</h3>
+                                  </div>
+                                  <img src="images/Fig2.png" alt="...">
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                    <div class="thumbnail">
+                                      <div class="caption">
+                                        <h3>vs Cloudiness</h3>
+                                      </div>
+                                      <img src="images/Fig3.png" alt="...">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                        <div class="thumbnail">
+                                          <div class="caption">
+                                            <h3>vs Wind Speed</h3>
+                                          </div>
+                                          <img src="images/Fig4.png" alt="...">
+                                        </div>
+                                      </div>
+                        </div>

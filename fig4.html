@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Climate Dashboard</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">Latitude</a>
+        </li>
+        <li>
+            <a href="#">Plots</a>
+            <select id="plot-select" onchange="location = this.value;">
+                <option value="#">Select</option>
+                <option value="fig1.html">Fig1</option>
+                <option value="fig2.html">Fig2</option>
+                <option value="fig3.html">Fig3</option>
+                <option value="fig4.html">Fig4</option>
+              </select>
+        </li>
+        <li>
+          <a href="comparison.html">Comparison</a>
+        </li>
+        <li>
+          <a href="data.html">Data</a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </nav>
+    <main>
+            <div class="container">
+                    <div>
+                            <br>
+                            <h3>vs Wind Speed</h3>
+                            <br>
+                            <hr>
+                            <p>The following shows Latitude vs Wind Speed
+                            </p>
+                            <br>
+                        </div>  
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="thumbnail">
+                          <img src="images/fig4.png" alt="...">
+                          <div class="caption">
+                                <p>Surface wind speeds are generally a function of high and low pressure zones, which vary by land surface type and the amount of incoming solar radiation. While the range of wind temperatures in the graph above is > 35 km/h, the majority of wind speed is < 15 km/h and is within the inner latitudes. As you move into the outer latitudes, day/ night temperature differences become more extreme and can lead to higher surface wind speeds. </p>
+                              </div>
+                        </div>
+                      </div>
